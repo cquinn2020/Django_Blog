@@ -13,10 +13,23 @@
 
   <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
 
+  <!-- Adding here for about page stuff -->
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/"> -->
+
+
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+
+
+  <!-- ending about page stuff -->
+
   {% if title %}
-  <title>Casey's Blog - {{ title }}</title>
+  <title>Casey Quinn - {{ title }}</title>
   {% else %}
-  <title>Casey's Blog</title>
+  <title>Casey Quinn</title>
   {% endif %}
 </head>
 
@@ -24,7 +37,7 @@
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
       <div class="container">
-        <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Casey's Blog</a>
+        <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Casey Quinn</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
           aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -63,19 +76,35 @@
         <!-- --- -->
         {% endblock %}
       </div>
+
+      <!-- Side bar -->
       <div class="col-md-4">
         <div class="content-section">
-          <h3>Our Sidebar</h3>
-          <p class='text-muted'>You can put any information here you'd like.
+          <h3>Contact Me</h3>
+          <p class='text-muted'>Please reach out to me to regarding job opportunities, to network, or just to
+            say hi!
+          </p>
           <ul class="list-group">
-            <li class="list-group-item list-group-item-light">Latest Posts</li>
-            <li class="list-group-item list-group-item-light">Announcements</li>
-            <li class="list-group-item list-group-item-light">Calendars</li>
-            <li class="list-group-item list-group-item-light">etc</li>
+            <li class="list-group-item list-group-item-light">
+              <a class="btn-pm" href="https://github.com/cquinn2020">
+                <img src="../media/profile_pics/github-mark.png" alt="" height="40" width="40">
+              </a>
+            </li>
+            <li class="list-group-item list-group-item-light">
+              <a class="btn-pm" href="https://www.linkedin.com/in/caseyq20">
+                <img src="../media/profile_pics/linkedin.png" alt="" height="30" width="120">
+              </a>
+            </li>
+            <li class="list-group-item list-group-item-light">
+              <a class="btn-pm" href="mailto:casey.quinn@tamu.edu">
+                <img src="../media/profile_pics/email.png" alt="" height="40" width="45">
+              </a>
+            </li>
           </ul>
           </p>
         </div>
       </div>
+      <!-- end sidebar -->
     </div>
   </main>
   <!-- Optional JavaScript -->

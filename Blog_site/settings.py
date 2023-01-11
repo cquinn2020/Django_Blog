@@ -142,17 +142,3 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'casey.quinn@tamu.edu'
 EMAIL_HOST_PASSWORD = 'remolbpubyyirdlj'
-
-# all the settings for AWS
-# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_ACCESS_KEY_ID = 'AKIAVZOJVM2MONJ3HHUX'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'django-blog-files-casey'
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-AWS_S3_REGION_NAME = 'us-west-2'
-AWS_S3_ADDRESSING_STYLE = 'virtual'
-AWS_S3_SIGNATURE_VERSION = 's3v4'
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
